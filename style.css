@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+}
+
+h1 {
+   font-size: 45px; 
+   text-decoration: underline;
+   text-align: center;
+   border-bottom: 1px solid gray;
+   margin: 0;
+   padding: 20px;
+}
+#grid ol{/* grid parent속에있는 ol 자식태그에 대해 적용*/
+
+    border-right: 2px solid black;
+    width: 100px;
+    margin: 0;
+    padding: 20px 40px;
+}
+/*a { /*셀렉터(선택자) 지정될 효과
+    declaration(효과)*color=property(속성),black=value(값)
+    text-decoration: none;
+}*/
+
+#grid ul{
+    margin-left: -20px;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 200px 2fr;
+
+}
+@media(max-width:700px){
+    #grid{
+    display: block;
+    }
+    #grid ol{/* grid parent속에있는 ol 자식태그에 대해 적용*/
+    border-right:none;
+    }
+    div{
+        margin-left: 10px;
+    }
+
+}
